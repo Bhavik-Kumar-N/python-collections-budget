@@ -2,7 +2,7 @@ from . import Expense
 
 class BudgetList():
     
-    def __inti__(self, budget):
+    def __init__(self, budget):
         self.budget=budget
         self.sum_expenses=0
         self.expenses=[]
@@ -25,7 +25,7 @@ def main():
     expenses=Expense.Expenses()
     expenses.read_expenses("data/spending_data.csv")
     for expense in expenses.list:
-        expense.amount.append(myBudgetList)
+        myBudgetList.append(expense.amount)
         print('The count of all expenses: '+str(len(myBudgetList)))
 
 if __name__=="__main__":
