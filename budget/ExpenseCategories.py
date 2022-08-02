@@ -35,7 +35,7 @@ expenses.read_expenses('data/spending_data.csv')
     divided_expenses_sum=[]
     for category_exps in divided_set_comp:
         divided_expenses_sum.append(sum(x.amount for x in category_exps))
-    ax.pie(divided_expenses_sum, labels=labels, autopct='%1.1f%%')
+    ax.pie(divided_expenses_sum, labels=labels, autopct='%1.1f%%') #, shadow=True, startangle=90)
     plt.show()
 
 if __name__ == "__main__":
